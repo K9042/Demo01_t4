@@ -10,6 +10,14 @@ namespace teh4
     {
         static void Main(string[] args)
         {
+            int ika;
+
+            Console.Write("Anna ikäsi: ");
+            ika = int.Parse(Console.ReadLine());
+
+            if (ika < 18) Console.WriteLine("Alaikäinen.");
+            else if (ika >= 18 && ika <= 65) Console.WriteLine("Täysi-ikäinen.");
+            else Console.WriteLine("Seniori.");
         }
     }
 }
